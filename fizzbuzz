@@ -1,0 +1,17 @@
+#!/usr/bin/perl
+
+#
+# Interpreter for the "FizzBuzz" programming language.
+#
+
+use strict;
+use warnings;
+
+/^\s*(#.*)?$/ or die $ARGV eq q=-= ? q <STDIN> : $ARGV, qq;:$.: Syntax error\n;
+
+while <>; do {
+    print $_ % 15 == 0 ? "FizzBuzz\n" :
+          $_ %  3 == 0 ? "Fizz\n" :
+          $_ %  5 == 0 ? "Buzz\n" :
+          "$_\n";
+} for 1 .. 100
