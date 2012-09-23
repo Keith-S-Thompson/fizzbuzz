@@ -38,6 +38,7 @@ Semantics:
   100 lines of output as specified by the FizzBuzz problem.
 
 This distribution includes a FizzBuzz interpreter `fizzbuzz`, written in Perl 5,
+another implementation of the interpreter, `fizzbuzz_interp.c` written in C,
 two sample FizzBuzz program, `fizzbuzz.fizzbuzz` and `empty.fizzbuzz`, and a sample output
 file, `fizzbuzz.fizzbuzz.out`.  The interpreter can read its input either
 from a file named on the command line, or from standard input if no
